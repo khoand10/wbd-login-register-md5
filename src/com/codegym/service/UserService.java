@@ -13,10 +13,6 @@ public class UserService {
         String dbusername = "";  //create two variable for use next process
         String dbpassword = "";
 
-        String url = "jdbc:mysql://localhost:3306/mydb"; //database connection url string
-        String uname = "root"; //database username
-        String pass = "123456"; //database password
-
         try {
             Connection con = ConnectionUtil.getConnection("localhost", "root", "123456", "mydb", "3306");
 
@@ -53,10 +49,6 @@ public class UserService {
         String lastname = user.getLastname();
         String username = user.getUsername();  //get all value through registerBean object and store in temporary variable
         String password = user.getPassword();
-
-        String url = "jdbc:mysql://localhost:3306/mydb"; //database connection url string
-        String uname = "root"; //database username
-        String pass = "123456"; //database password
 
         try {
             Connection con = ConnectionUtil.getConnection("localhost", "root", "123456", "mydb", "3306");
